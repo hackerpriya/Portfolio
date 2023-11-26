@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Bhargava - Full Stack Web Developer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ebf1f4; /* Yogic Serenity - Soft Blue-Green */
+            color: #140303;
+            margin: 0;
+            padding: 0;
+            padding-top: 0; /* No space above the navbar */
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #b4cde7; /* Deep Blue */
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .navbar-logo {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 16px;
+            box-sizing: border-box;
+        }
+
+        .navbar a:hover {
+            background-color: #001f3f; /* Darker Blue on hover */
+        }
+
+        .header {
+            background-color: #03396c; /* Deep Blue */
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin: 0; /* Remove default margin */
+            box-sizing: border-box;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 2rem auto; /* Center the container horizontally */
+            box-sizing: border-box;
+        }
+
+        .text-center {
+            text-align: center; /* Add this class for center alignment */
+            box-sizing: border-box;
+        }
+
+        /* Apply different colors to H1 and H3 tags */
+        h1 {
+            color: #1a237e; /* Dark Indigo for H1 */
+            margin-bottom: 0.5rem; /* Adjust space below H1 */
+        }
+
+        h3 {
+            color: #1565c0; /* Blue for H3 */
+            margin-bottom: 1rem; /* Adjust space below H3 */
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /* Remove default margin */
+            box-sizing: border-box;
+        }
+
+        .projects {
+            margin-top: 2rem;
+            box-sizing: border-box;
+        }
+
+        .contact {
+            margin-top: 2rem;
+            box-sizing: border-box;
+        }
+
+        /* Social media icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem; /* Adjust space between contact info and icons */
+            box-sizing: border-box;
+        }
+
+        .social-icons a {
+            margin: 0 10px; /* Adjust space between icons */
+            box-sizing: border-box;
+        }
+
+        .social-icons img {
+            width: 30px; /* Adjust the size of the icons */
+            height: 30px;
+            box-sizing: border-box;
+        }
+
+        /* Alternating section colors */
+        section {
+            position: relative;
+            margin-bottom: 2rem; /* Adjust the space below each section */
+            box-sizing: border-box;
+        }
+        .resume-icon {
+            width: 30px; /* Adjust the size of the resume icon */
+            height: 30px;
+            margin: 0 10px; /* Adjust space between icons */
+            box-sizing: border-box;
+        }
+
+        .resume-icon:hover::after {
+            content: 'Resume';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff; /* Adjust the background color on hover */
+            color: #000; /* Adjust the text color on hover */
+            padding: 5px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            z-index: 1; /* Ensure the text appears above the icon */
+        }
+
+       
+
+        /* section::after {
+            content: '\2022 \2022 \2022 \2022 \2022 \2022 \2022'; /* Unicode for thick dots */
+            position: absolute;
+            bottom: -1rem; /* Adjust the vertical position of the dots */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem; /* Adjust the size of the dots */
+            color: #fff; /* Color of the dots */
+            white-space: nowrap;
+            margin-top: 0.5rem; /* Add some space between dots and text */
+            box-sizing: border-box;
+        } */
+    </style>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo"><a href="C:\Users\Priyanka\Desktop\My Portfolio Website\index.html">CoderAdiyogini</a></div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <img src="priya.png" alt="Profile Picture" class="profile-picture" width="150" height="150">
+        <h2>Priyanka Bhargava</h2>
+        <p>Full Stack Web Developer | Yoga Practitioner</p>
+    </div>
+
+    <div class="container">
+        <section id="home" class="text-center">
+            <!-- ... (your existing code for the Home section) ... -->
+        </section>
+
+        <section id="about" class="text-center">
+            <h1>About Me</h1>
+            <p>
+                Enthusiastic and innovative Full Stack Web Developer with a robust foundation in HTML, CSS, Bootstrap,
+                JavaScript, and Python. Eager to embark on a dynamic web development career, I am committed to staying
+                abreast of emerging technologies to deliver cutting-edge solutions.
+            </p>
+        
+            <p>
+                My expertise lies in crafting user-friendly, responsive web applications with a meticulous eye for design.
+                Collaborative by nature, I bring proven skills in teamwork, quick adaptability, and a fresh perspective to
+                every project.
+            </p>
+        
+            <p>
+                Beyond the realm of coding, I am a passionate Advanced Yoga Practitioner and Teacher. I can contribute to
+                team productivity by integrating yoga practices that foster mental and physical well-being, creating a
+                healthier and more productive work environment.
+            </p>
+        
+            <p>
+                Notably, my proficiency extends to organizing information with precision using Notion. This skill ensures a
+                structured and efficient approach to project coordination, adding a valuable layer to my technical toolkit.
+            </p>
+        
+            <p>
+                Excited to contribute technical skills, dedication, holistic well-being, and organizational prowess to a
+                forward-thinking development team.
+            </p>
+        </section>
+        <hr align="center" size="4" width="100" color="Blue">
+
+        <section id="skills">
+            <h1 class="text-center">Skills</h1>
+            <h3>Technical Skills</h3>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Bootstrap 5</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Basic Data Structures</li>
+            </ul>
+            
+            <!-- Soft Skills -->
+            <h3>Soft Skills</h3>
+            <ul class="skills-list">
+                <li>Teamwork</li>
+                <li>Adaptability</li>
+                <li>Problem Solving</li>
+                <li>Time Management</li>
+                <li>English Communication</li>
+                <li>Emotional Intelligence</li>
+                <li>Conflict Resolution</li>
+            </ul>
+            
+            <!-- Tools and Platforms -->
+            <h3>Tools and Platforms</h3>
+            <ul class="skills-list">
+                <li>Notion</li>
+                <li>Expertise</li>
+                <li>MindMap</li>
+                <li>Diagrams.net</li>
+                <li>Canva</li>
+                <li>Microsoft</li>
+                <li>Clipchamp</li>
+                <li>Excalidraw</li>
+            </ul>
+            
+            <!-- Additional Skills -->
+            <h3>Additional Skills</h3>
+            <ul class="skills-list">
+                <li>Yoga Practitioner</li>
+                <li>Teaching</li>
+                <!-- Add more additional skills as needed -->
+            </ul>
+        </section>
+        <hr align="center" size="4" width="100" color="Blue">
+
+        <section id="projects">
+            <h1 class="text-center">Projects</h1>
+            <!-- Add your projects with names, descriptions, and technologies used -->
+            <div class="project">
+                <h3>Project 1: Amazon Clone Website</h3>
+                <p>Create a fully functional Amazon clone website that replicates key features of the popular e-commerce platform. Users should be able to browse products, add items to their cart, and complete the checkout process. Implement user authentication, product search, and a responsive design for seamless user experience.</p>
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>Frontend</li>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS5</li>
+                        <li>Bootstrap5</li>
+                        <li>React.js</li>
+                        <li>Redux</li>
+                    </ul>
+                    <li>Backend</li>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                        <li>JWT(User Authentication)</li>
+
+                    </ul>
+                    <li>Integration</li>
+                    <ul>
+                        <li>APIs</li>
+                        <li>Payment Processing(Service like Stripe</li>
+                    </ul>
+                </ul>                
+
+            </div>
+
+            <div class="project">
+                <h3>Project 2: Blog Platform</h3>
+                <p>Develop a robust blog platform where users can sign up, create, edit, and delete their blog posts. Include features for users to comment on posts and categorize content. Implement a responsive and visually appealing design to enhance the reading experience.</p>
+                <h4>Tecchnologies Used</h4>
+                <ul>
+                    <li>Frontend</li>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS5</li>
+                        <li>Bootstrap5</li>
+                        <li>React.js</li>
+                    </ul>
+                    <li>Backend</li>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                        <li>JWT(User Authentication)</li>
+
+                    </ul>
+                    <li>Integration</li>
+                    <ul>
+                        <li>Text Editor</li>
+                        <li>Comment System</li>
+                        <li>Categorization & Search Functionality</li>
+                    </ul>
+                </ul>            
+            </div>
+        </section>
+        <hr align="center" size="4" width="100" color="Blue">
+
+        <section id="contact" class="text-center">
+            <h1>Contact Information</h1>
+            <p>Email: priyanka.bhrgva@gmail.com</p>
+            <p>Phone: 6367332122</p>
+            <div class="social-icons">
+                <!-- Replace "path/to/icon1.png" with the actual path to your icon image -->
+                <a href="www.linkedin.com/in/priyanka-bhrgv"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="Icon1" title="LinkedIn"></a>
+                <!-- Replace "path/to/icon2.png" with the actual path to your icon image -->
+                <a href="https://adiyogini.medium.com/"><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Medium_svg5-512.png" alt="Medium" title="Resume"></a>
+                <!-- Add more social media icons as needed -->
+                <a href="https://drive.google.com/file/d/141XRwr5eplfvhZnH2gSEx1aqK2FuGhsS/view?usp=sharing" target="_blank" title="Resume">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1250/1250303.png" alt="Resume Icon" class="resume-icon">
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
