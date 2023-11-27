@@ -45,7 +45,7 @@
         }
 
         .header {
-            background-color: #03396c; /* Deep Blue */
+            background-color: #000000; /* Deep Blue */
             color: #fff;
             text-align: center;
             padding: 2rem;
@@ -81,7 +81,7 @@
         }
 
         .skills-list {
-            list-style-type: none;
+            list-style-type: disc;
             padding: 0;
             margin: 0; /* Remove default margin */
             box-sizing: border-box;
@@ -143,28 +143,73 @@
             box-sizing: border-box;
             z-index: 1; /* Ensure the text appears above the icon */
         }
+        #skills_{
+            margin-left: 20px;
+        }
 
-       
-
-        /* section::after {
-            content: '\2022 \2022 \2022 \2022 \2022 \2022 \2022'; /* Unicode for thick dots */
-            position: absolute;
-            bottom: -1rem; /* Adjust the vertical position of the dots */
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 2rem; /* Adjust the size of the dots */
-            color: #fff; /* Color of the dots */
-            white-space: nowrap;
-            margin-top: 0.5rem; /* Add some space between dots and text */
+        #projects{
+            margin-left: 20px;
+        }
+        #about{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        hr {
+            border: none;
+            height: 10px;
+            background-image: radial-gradient(circle, #033667 15%, transparent 16%);
+            background-position: 0 0;
+            background-size: 20px 20px;
+            }
+    /* Adjust the spacing below each section */
+        section{
+            position: relative;
+            margin-bottom: 2rem;
             box-sizing: border-box;
+            }
+        
+        /* Home Section */
+        #home{
+            text-align : center;
+            padding : 50px 0;
+        }
+        .intro{
+            max-width : 600px;
+            margin : 0 auto;
+        }
+        .intro h1{
+            font-size: 2.5em;
+            color : #333;
+        }
+        .intro p{
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 20px;
+        }
+        /* .odd{
+            background-color: #b4cde7; 
+        }
+        .even{
+            background-color: #000000;
         } */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .navbar a {
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
     </style>
 </head>
 
 
 <body>
     <div class="navbar">
-        <div class="navbar-logo"><a href="C:\Users\Priyanka\Desktop\My Portfolio Website\index.html">CoderAdiyogini</a></div>
+        <div class="navbar-logo"><a href="index.html">CoderAdiyogini</a></div>
         <div>
             <a href="#home">Home</a>
             <a href="#about">About Me</a>
@@ -181,11 +226,15 @@
     </div>
 
     <div class="container">
-        <section id="home" class="text-center">
+        <section id="home" class="text-center" class="odd">
             <!-- ... (your existing code for the Home section) ... -->
+            <div class="intro">
+                <h1>Hello, I'm Priyanka Bhargava</h1>
+                <p>Welcome to my Portfolio. Explore and discover more about my skills, projects, & experiences.</p>
+            </div>
         </section>
 
-        <section id="about" class="text-center">
+        <section id="about" class="text-center" class="even">
             <h1>About Me</h1>
             <p>
                 Enthusiastic and innovative Full Stack Web Developer with a robust foundation in HTML, CSS, Bootstrap,
@@ -217,10 +266,10 @@
         </section>
         <hr align="center" size="4" width="100" color="Blue">
 
-        <section id="skills">
+        <section id="skills" class="odd">
             <h1 class="text-center">Skills</h1>
             <h3>Technical Skills</h3>
-            <ul class="skills-list">
+            <ul class="skills-list" id="skills_">
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>Bootstrap 5</li>
@@ -231,7 +280,7 @@
             
             <!-- Soft Skills -->
             <h3>Soft Skills</h3>
-            <ul class="skills-list">
+            <ul class="skills-list" id="skills_">
                 <li>Teamwork</li>
                 <li>Adaptability</li>
                 <li>Problem Solving</li>
@@ -243,7 +292,7 @@
             
             <!-- Tools and Platforms -->
             <h3>Tools and Platforms</h3>
-            <ul class="skills-list">
+            <ul class="skills-list" id="skills_">
                 <li>Notion</li>
                 <li>Expertise</li>
                 <li>MindMap</li>
@@ -256,7 +305,7 @@
             
             <!-- Additional Skills -->
             <h3>Additional Skills</h3>
-            <ul class="skills-list">
+            <ul class="skills-list" id="skills_">
                 <li>Yoga Practitioner</li>
                 <li>Teaching</li>
                 <!-- Add more additional skills as needed -->
@@ -264,7 +313,7 @@
         </section>
         <hr align="center" size="4" width="100" color="Blue">
 
-        <section id="projects">
+        <section id="projects" class="even">
             <h1 class="text-center">Projects</h1>
             <!-- Add your projects with names, descriptions, and technologies used -->
             <div class="project">
@@ -328,10 +377,10 @@
         </section>
         <hr align="center" size="4" width="100" color="Blue">
 
-        <section id="contact" class="text-center">
+        <section id="contact" class="text-center" class="odd">
             <h1>Contact Information</h1>
             <p>Email: priyanka.bhrgva@gmail.com</p>
-            <p>Phone: 6367332122</p>
+            <p>Phone: +91-6367332122</p>
             <div class="social-icons">
                 <!-- Replace "path/to/icon1.png" with the actual path to your icon image -->
                 <a href="www.linkedin.com/in/priyanka-bhrgv"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="Icon1" title="LinkedIn"></a>
@@ -344,6 +393,14 @@
             </div>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-dpnbGFdwkmsQ3vXp5Tf3v3RkAORRU5c2iZdA95VBcAgI9qbu4VyKgg6V8Z9xsxXp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-RtbY3eZvLlZ8UXsTBFjOQpaQZ6G6R1d9hEIMIHtx6IqVpAVoMRMVsAnUPXOtIEnr" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-dpnbGFdwkmsQ3vXp5Tf3v3RkAORRU5c2iZdA95VBcAgI9qbu4VyKgg6V8Z9xsxXp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-RtbY3eZvLlZ8UXsTBFjOQpaQZ6G6R1d9hEIMIHtx6IqVpAVoMRMVsAnUPXOtIEnr"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
